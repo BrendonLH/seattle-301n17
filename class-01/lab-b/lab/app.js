@@ -149,23 +149,22 @@ let Student = array => ({
   hometown : array[2],
 });
 
-// let joe = new Student('Joe', 'Schmoe', 100);
+let joe = Student(['Joe', 'Schmoe', 100]);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-console.log(Student(['Joe', 'Schmoe', 100]));
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
 
 
-Student.prototype.greeting = function() {
-  return `Hi, my name is ${this.name}`;
-};
+let greeting = () => `Hi, my name is ${joe.name}`;
+
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this method to break!
-console.log(joe.greeting());
+console.log(greeting());
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
